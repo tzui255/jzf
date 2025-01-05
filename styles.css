@@ -1,0 +1,15 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+h3 {
+  color:white;
+}
+button {
+  background-color:black;
+  color:white;
+  width: 70px;
+  height: 35px;
+}
