@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+  </head>
+  <body style = "background-color:black">
+    <button onclick="fächer()">Fächer</button>
+    <script>
+      function fächer() {
+        const a = document.createElement("p")
+        const fach1 = document.createElement("button")
+        const fach2 = document.createElement("button")
+        const fach3 = document.createElement("button")
+        const fach4 = document.createElement("button")
+        
+        fach1.textContent = 'Mathe'
+        fach2.textContent = 'Biologie'
+        fach3.textContent = 'Chemie'
+        fach4.textContent = 'English'
+        
+        fach1.onclick = frage1
+        
+        document.body.appendChild(a)
+        document.body.appendChild(fach1);
+        document.body.appendChild(fach2);
+        document.body.appendChild(fach3);
+        document.body.appendChild(fach4);
+        document.body.appendChild(fach5);
+      }
+      function frage1() {
+        const a = document.createElement("p")
+        const fragemathe = document.createElement("h3");
+        const ant1 = document.createElement("button");
+        const ant2 = document.createElement("button");
+        const ant3 = document.createElement("button");
+        
+        ant1.textContent = '10';
+        ant2.textContent = '13';
+        ant3.textContent = '10000';
+        fragemathe.textContent = 'Was ist die wurzel von 100'
+        
+        document.body.appendChild(fragemathe)
+        document.body.appendChild(a);
+        document.body.appendChild(ant1);
+        document.body.appendChild(ant2);
+        document.body.appendChild(ant3);
+        
+      }
+      
+    </script>
+  </body>
+</html>
