@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>tzui test</title>
+    <title>Hello, World!</title>
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8">
   </head>
   <body style = "background-color:black">
-    <h1 style = "color:white">von Zain</h1>
-    <button onclick="fächer()">Fächer</button>
+    <h6 style= "color:white">von tzui</h6>
+    <button id="fäch" onclick="fächer()">Fächer</button>
     <script>
       function fächer() {
+        const änder = document.createElement("button")
         const a = document.createElement("p")
         const fach1 = document.createElement("button")
         const fach2 = document.createElement("button")
         const fach3 = document.createElement("button")
         const fach4 = document.createElement("button")
-        
+
+        änder.textContent = 'Fächer'
         fach1.textContent = 'Mathe'
         fach2.textContent = 'Biologie'
         fach3.textContent = 'Chemie'
@@ -23,25 +25,31 @@
         
         fach1.onclick = frage1
         
+        const fächButton = document.getElementById('fäch');
+        document.body.removeChild(fächButton);
+        document.body.appendChild(änder)
         document.body.appendChild(a)
         document.body.appendChild(fach1);
         document.body.appendChild(fach2);
         document.body.appendChild(fach3);
         document.body.appendChild(fach4);
-        document.body.appendChild(fach5);
+        
       }
-      function frage1() {
+    </script>
+    <script>
+            function frage1() {
         const a = document.createElement("p")
         const fragemathe = document.createElement("h3");
         const ant1 = document.createElement("button");
         const ant2 = document.createElement("button");
         const ant3 = document.createElement("button");
-        
+          
         ant1.textContent = '10';
         ant2.textContent = '13';
         ant3.textContent = '10000';
         fragemathe.textContent = 'Was ist die wurzel von 100'
         
+
         document.body.appendChild(fragemathe)
         document.body.appendChild(a);
         document.body.appendChild(ant1);
@@ -52,5 +60,3 @@
     </script>
   </body>
 </html>
-<body>
-</body>
