@@ -1,82 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>tzui testtest</title>
+    <title>Hello, World!</title>
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8">
   </head>
   <body style = "background-color:black">
     <h6 style= "color:white">von tzui</h6>
     <button id="fäch" onclick="fächer()">Fächer</button>
-    <script>
-      function fächer() {
-        const änder = document.createElement("button")
-        const a = document.createElement("p")
-        const fach1 = document.createElement("button")
-        const fach2 = document.createElement("button")
-        const fach3 = document.createElement("button")
-        const fach4 = document.createElement("button")
-
-        änder.textContent = 'Fächer'
-        fach1.textContent = 'Mathe'
-        fach2.textContent = 'Biologie'
-        fach3.textContent = 'Chemie'
-        fach4.textContent = 'English'
-        
-        fach1.onclick = frage1
-        
-        const fächButton = document.getElementById('fäch');
-        document.body.removeChild(fächButton);
-        document.body.appendChild(änder)
-        document.body.appendChild(a)
-        document.body.appendChild(fach1);
-        document.body.appendChild(fach2);
-        document.body.appendChild(fach3);
-        document.body.appendChild(fach4);
-        
-      }
-    </script>
-    <script>
-            function frage1() {
-        const a = document.createElement("p")
-        const fragemathe = document.createElement("h3");
-        const ant1 = document.createElement("button");
-        const ant2 = document.createElement("button");
-        const ant3 = document.createElement("button");
-          
-        ant1.textContent = '10';
-        ant2.textContent = '13';
-        ant3.textContent = '10000';
-        fragemathe.textContent = 'Was ist die wurzel von 100'
-        
-        ant1.onclick = frage2r
-        document.body.appendChild(fragemathe)
-        document.body.appendChild(a);
-        document.body.appendChild(ant1);
-        document.body.appendChild(ant2);
-        document.body.appendChild(ant3);
-            }
-      function frage2r() {
-        const Frage2 = document.createElement("h3")
-        const a1 = document.createElement("p")
-        const fragemathe1 = document.createElement("h3");
-        const frage2ant1 = document.createElement("button");
-        const frage2ant2 = document.createElement("button");
-        const frage2ant3 = document.createElement("button");
-
-        Frage2.textContent = 'Richtig';
-        frage2ant1.textContent = '10';
-        frage2ant2.textContent = '13';
-        frage2ant3.textContent = '11';
-        fragemathe1.textContent = 'Was ist die wurzel von 100'
-        
-
-        document.body.appendChild(fragemathe1)
-        document.body.appendChild(a1);
-        document.body.appendChild(frage2ant1);
-        document.body.appendChild(frage2ant2);
-        document.body.appendChild(frage2ant3);
-        }
-    </script>
+    <script src="frage1.js"></script>
+    <script src="richtigfalschantwort.js"></script>
+    <script src='frage2.js'></script>
+    <script src='fächer.js'></script>
   </body>
 </html>
